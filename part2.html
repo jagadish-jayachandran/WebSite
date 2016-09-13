@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dating Website</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style1.css">
+</head>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<body>
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+<fieldset>
+	<legend>Your Face</legend>
+	<label for="image">Your image:</label>
+	<input type="file" id="image" name="image" required=""><br>
+	<label for="preview">Image Preview:</label>
+	<img src="" id="preview">
+</fieldset>
+<fieldset>
+	<legend>Your General Details</legend>
+		<label for="name">Name:	</label>
+		<input type="text" name="name" id="name" required=""><br>
+		<div>
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" value="Male" required="gender"><span>Male</span><input type="radio" name="gender" value="Female" required="gender"><span>Female</span>
+		</div><br>
+		<label for="age">Age:</label>
+		<input type="number" name="age" required=""><br>
+		<label for="dob">Date of birth:</label>
+		<input type="date" name="date" id="dob" required=""><br>
+		<label for="color">Favorite color:</label>
+		<input type="color" name="color" id="color" required=""><br>
+		<label for="country">Which country:</label>
+		<select name="country" required="">
+		    <option value="--">--</option>
+			<option value="ind">India</option>
+			<option value="uk">United Kingdom</option><option value="usa">United States of America</option>
+			<option value="eng">England</option>
+			<option value="cna">China</option>
+			<option value="jp">Japan</option>
+			<option value="afr">Africa</option>
+		</select>
+</fieldset>
+
+<fieldset>
+	<legend>Your Indicators</legend>
+	<label for="height">Height:</label>
+	<span class="color">Short</span><input type="range" name="height" id="height" step="1" Value="50" required="" min="0" max="100" required=""><span class="mark">Tall</span><br>
+	<label for="salary">Salary:</label>
+	<span class="color">Poor</span><input type="range" name="salary" id="salary" min="0" max="100" value="50" required=""><span class="mark">Rich</span>
+</fieldset>
+
+<fieldset>
+		<legend>Your Contact Information</legend>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required=""><br>
+		<label for="mobile">Mobile:</label>
+		<input type="tel" name="mobile" form="mobile" required=""><br>
+		<label for="address">Address:</label>
+		<textarea id="address">Address</textarea><br>
+		<div>
+		<label for="contact">Method to contact you:</label>
+		<input type="checkbox" name="Email" required="">Email
+		<input type="checkbox" name="Whatsapp" required="">Whatsapp
+		<input type="checkbox" name="In-appchat" required="">In-appchat
+		</div>
+</fieldset>
+
+	<input type="submit" name="submit" value="Submit!">
+
+</form>
+</body>
+</html>
